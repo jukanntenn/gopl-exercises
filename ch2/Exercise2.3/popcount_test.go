@@ -17,3 +17,13 @@ func BenchmarkPopcountLoop(b *testing.B) {
 		PopCountLoop(1000)
 	}
 }
+
+func TestCorrectness(t *testing.T) {
+	tests := []uint64{0, 1, 21845, 1185589760, 0x1234567890ABCDEF}
+
+	for _, test := range tests {
+		if PopCount(test) != PopCountLoop(test) {
+			t.Errorf("PopCount(%v) != PopCountLoop(%v)", test, test)
+		}
+	}
+}
