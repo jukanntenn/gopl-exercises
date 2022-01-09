@@ -5,7 +5,7 @@ import (
 )
 
 // BenchmarkPopcount-8             1000000000               0.3068 ns/op
-func BenchmarkPopcount(b *testing.B) {
+func BenchmarkPopCount(b *testing.B) {
 	for i := 0; i < b.N; i++ {
 		PopCount(0x1234567890ABCDEF)
 	}
