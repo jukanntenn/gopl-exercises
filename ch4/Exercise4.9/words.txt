@@ -1,0 +1,3 @@
+Go recently turned eleven, so you can imagine how much the language and its ecosystem have evolved through the years. A strongly typed language, it’s become increasingly popular with its garbage collection and concurrency support. It’s massively performant, scalable, and resource-use efficient. Small wonder that Go is applied across a multitude of areas these days, including web applications, microservices, cloud computing, web servers, and other systems/tools.
+
+A good way to stay on top of the constant changes to the language, its tools, and the community is to check out some of the blogs that specifically cover Go. In this article, we’ll look at blogs written by Go users, contributors, and educators about the various ways they are making use of the language.
