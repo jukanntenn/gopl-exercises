@@ -6,9 +6,8 @@ import (
 	"image/gif"
 	"io"
 	"math"
-	"math/rand"
+	"math/rand/v2"
 	"os"
-	"time"
 )
 
 var palette = []color.Color{color.Black, color.RGBA{0x00, 0xFF, 0x00, 0xff}}
@@ -19,9 +18,6 @@ const (
 )
 
 func main() {
-	// The sequence of image is deterministic unless we seed
-	// the pseudo-random number generator using the current time.
-	rand.Seed(time.Now().UTC().UnixNano())
 	lissajous(os.Stdout)
 }
 
