@@ -10,7 +10,6 @@ import (
 	"math/rand"
 	"net/http"
 	"strconv"
-	"time"
 )
 
 // web
@@ -23,10 +22,6 @@ const (
 )
 
 func main() {
-	// The sequence of image is deterministic unless we seed
-	// the pseudo-random number generator using the current time.
-	rand.Seed(time.Now().UTC().UnixNano())
-
 	handler := func(w http.ResponseWriter, r *http.Request) {
 		if err := r.ParseForm(); err != nil {
 			log.Print(err)
